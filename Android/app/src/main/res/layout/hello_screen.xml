@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/helloScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#8C2016"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/pressToPlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@null"
+        android:padding="6dp"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/tictactoe_logo" />
+
+    <TextView
+        android:id="@+id/helloText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pressToPlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textColor="#3B0E0A"
+        android:text="Sveiki!\n\n\n\n\n\nSpiediet uz ekrāna, lai sāktu!" />
+</RelativeLayout>

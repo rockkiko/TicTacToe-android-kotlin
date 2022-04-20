@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F05446"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/modePvP"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Spēlēt PvP" />
+
+    <Button
+        android:id="@+id/modePvC"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/modePvP"
+        android:layout_centerHorizontal="true"
+        android:text="Spēlēt PvC  (vēl nav implementēts)" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/modePvC"
+        android:layout_marginTop="128dp"
+        android:layout_centerHorizontal="true"
+        android:text="iziet" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/vardsId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Ievadi vārdu" />
+</RelativeLayout>
